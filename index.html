@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+
+
+    <title>Mi sitio</title>
+  </head>
+  <body>
+
+<div id="openModal" class="modalDialog">
+
+	<div class="navegacion" id="nave">
+		<a id="close" title="Close" class="close">X</a>
+    <nav>
+      <ul>
+      <a href="#">  <li> Portafolio</li></a>
+      <a href="#">  <li> Quienes somos</li></a>
+        <a href="#"><li> Contacto</li></a>
+      </ul>
+    </nav>
+	</div>
+</div>
+<div class="link">
+  <a id="openMo">
+
+    <div class="resp-menu active">
+
+      <div class="despMen">
+        </div>
+      <div class="despMen">
+    </div>
+
+
+</div>
+  </a>
+
+</div>
+
+<div class="">
+
+  <div class="row">
+      <div class="col-md-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-md-8">
+          <img src="img/bg-cta.jpg" alt="" class="img-fluid">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="img/demo-screen-1.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+        <img src="img/demo-screen-1.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+        <img src="img/demo-screen-1.jpg" alt="" class="img-fluid">
+      </div>
+    </div>
+</div>
+<a href="#" class="btn btn-primary js-scroll-trigger">Enlace</a>
+<style media="screen">
+
+.link{
+float: right;
+}
+.resp-menu.active {
+  position: fixed;
+  z-index: 20;
+}
+.despMen{
+height: 3px;
+
+right: 0;
+background-color: black;
+position: absolute;
+transition: all .5s cubic-bezier(0.230, 1.000, 0.320, 1.000) .3s, width .5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0s, left .5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0s, right .5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0s, transform .5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0s;
+
+}
+.resp-menu > div:first-child {
+right: 0;
+width: 100%;
+}
+.resp-menu > div:last-child {
+  width: 67%;
+  bottom: 0px;
+  left: 33%;
+}
+.resp-menu{
+  position: absolute;
+  right: 4%;
+  top: calc(2rem + 15px);
+  width: 30px;
+  height: 16px;
+  cursor: pointer;
+  z-index: 20;
+
+}
+.navegacion ul>a>li{
+list-style:none;
+color: black;
+font-family: sans-serif;
+font-size: 80px;
+
+}
+.logo{
+
+z-index: 20;
+
+}
+.logo img {
+
+
+
+}
+.navegacion ul>a>li:hover{
+color: yellow;
+animation: movimiento 1s linear ;
+}
+@keyframes movimiento{
+from{
+  transform: rotateX(0deg);
+} to{
+  transform: rotateX(12deg);
+}
+}
+
+
+.navegacion ul>a{text-decoration: none;}
+
+.modalDialog {
+position: fixed;
+font-family: Arial, Helvetica, sans-serif;
+z-index: 99999;
+color: black;
+top: 0;
+left: 0;
+background: rgba(0,0,0,0.8);
+width: 100%;
+height: 100%;
+opacity:1;
+display: none;
+}
+.modalDialog:target {
+
+}
+.modalDialog > div {
+  position: fixed;
+  height: 600px;
+  width: 800px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  left: 50%;
+  margin-left: -400px;
+  top: 50%;
+  margin-top: -250px;
+}
+.close {
+background: #606061;
+color: #FFFFFF;
+line-height: 25px;
+position: absolute;
+right: -12px;
+text-align: center;
+top: -10px;
+width: 24px;
+text-decoration: none;
+font-weight: bold;
+-webkit-border-radius: 12px;
+-moz-border-radius: 12px;
+border-radius: 12px;
+-moz-box-shadow: 1px 1px 3px #000;
+-webkit-box-shadow: 1px 1px 3px #000;
+box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #00d9ff; }
+
+</style>
+<script type="text/javascript">
+
+document.getElementById("openMo").addEventListener("click", function(e){
+
+  document.getElementById("openModal").style.display="block";
+
+});
+document.getElementById("close").addEventListener("click", function(e){
+
+  document.getElementById("openModal").style.display="none";
+
+});
+</script>
+
+  </body>
+</html>
