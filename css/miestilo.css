@@ -7,16 +7,31 @@
 
 }
 .menu-nav{
-  margin-top: 250px;
+
+}
+#action{
+  background: black;
+}
+.contact{
+  display: inline-block;
+  margin-left: 24px;
+}
+.contact a{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: black;
+}
+.logo{
+  display: inline-block;
 }
 .container-menu{
     position: fixed;
     top: 0;
     right: 0;
-    background: linear-gradient(10deg, #313112, #2E2E22);
+  /*  background: linear-gradient(10deg, #313112, #2E2E22);*/
     border-radius: 0% 0% 0% 100%;
-    padding: 26px 26px 52px 52px;
-    transition: all 2s;
+    padding: 6px 6px 2px 2px;
+    transition: all 1s;
 }
 
 .icon-menu{
@@ -65,7 +80,7 @@
 .menu a:hover{
     color: #6F84A4;
     text-decoration: none;
-transform:translate(0px,-10px);
+    transform:translate(0px,-10px);
 }
 .menu a:hover:before{
     width: 100%;
